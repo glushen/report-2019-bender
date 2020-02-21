@@ -1,0 +1,39 @@
+%% Преамбула TeX-файла
+
+% 1. Стиль и язык
+\documentclass[utf8x, 12pt]{G7-32} % Стиль (по умолчанию будет 14pt)
+
+% Остальные стандартные настройки убраны в preamble.inc.tex.
+\include{preamble}
+
+\begin{document}
+
+% выключает нумерацию ВСЕГО;
+% здесь начинаются ненумерованные главы:
+% реферат, введение, глоссарий, сокращения и прочее.
+\frontmatter
+
+\include{1-title-page}
+
+\thispagestyle{empty}
+\setcounter{page}{0}
+\tableofcontents
+\clearpage
+
+
+\include{2-introduction}
+
+\mainmatter
+
+\include{3-1st-chapter}
+\include{3-2nd-chapter}
+
+%% Здесь заканчивается нумерованная часть документа
+%% и начинаются ссылки и заключение
+\backmatter
+
+\include{4-conclusion}
+
+\include{5-biblio}
+
+\end{document}

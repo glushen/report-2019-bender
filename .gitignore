@@ -7,5 +7,7 @@
 *.pdf
 !images/*.pdf
 *.toc
+*.bbl
+*.blg
 .directory
 .vscode

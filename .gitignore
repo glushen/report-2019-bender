@@ -9,5 +9,7 @@
 *.toc
 *.bbl
 *.blg
+*.nav
+*.snm
 .directory
 .vscode
